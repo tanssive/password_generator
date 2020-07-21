@@ -2,8 +2,7 @@ import string
 import random
 
 def generate_ascii_characters_list():
-    characters = list(string.printable)
-    chr_lst = characters[:len(characters)-6]
+    chr_lst = list(string.printable)[:-6]
     return chr_lst
 
 def create_random_passwd(amnt_of_char):
