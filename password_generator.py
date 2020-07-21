@@ -7,9 +7,6 @@ def generate_ascii_characters_list():
 
 def create_random_passwd(amnt_of_char):
     lst_of_chars = generate_ascii_characters_list()
-
     return ''.join(random.choice(lst_of_chars) for _ in range(amnt_of_char))
 
-specified_len = int(input('Provide length of the new password: '))
-
-print(create_random_passwd(specified_len))
+print(create_random_passwd(int(input('Provide length of the new password: '))))
